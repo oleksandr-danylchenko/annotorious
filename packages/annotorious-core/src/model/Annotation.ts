@@ -30,9 +30,13 @@ export interface AnnotationTarget {
 
   updated?: Date;
 
+  state?: AbstractState;
+
 }
 
 export interface AbstractSelector { }
+
+export interface AbstractState { }
 
 export interface AnnotationBody {
 
