@@ -30,6 +30,8 @@ export interface AnnotationTarget {
 
   updated?: Date;
 
+  styleClass?: string;
+
 }
 
 export interface AbstractSelector { }
