@@ -66,7 +66,7 @@ export interface AbstractW3CSelector { }
 
 
 export type W3CAnnotationStylesheet = string | {
-  type: "CssStylesheet",
+  type: 'CssStylesheet',
   value: string
 }
 
@@ -83,7 +83,7 @@ const hashCode = (obj: Object): string => {
   }
 
   return `${hash}`;
-}
+};
 
 export const parseW3CUser = (user?: any) => user
   ? typeof user === 'object' ? { ...user } : user : undefined;
@@ -94,7 +94,7 @@ export const parseW3CUser = (user?: any) => user
 export const parseW3CBodies = (
   body: W3CAnnotationBody | W3CAnnotationBody[],
   annotationId: string
-) : AnnotationBody[] => (Array.isArray(body) ? body : [body]).map(body => {
+): AnnotationBody[] => (Array.isArray(body) ? body : [body]).map(body => {
 
   // Exctract properties that conform to the internal model, but keep custom props
   const { id, type, purpose, value, created, creator, ...rest } = body;
@@ -113,7 +113,7 @@ export const parseW3CBodies = (
     created: created ? new Date(created) : undefined,
     creator: parseW3CUser(creator),
     ...rest
-  }
+  };
 
 });
 
