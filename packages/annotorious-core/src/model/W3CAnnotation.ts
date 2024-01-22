@@ -18,6 +18,8 @@ export interface W3CAnnotation {
 
   target: W3CAnnotationTarget | W3CAnnotationTarget[];
 
+  stylesheet?: W3CAnnotationStylesheet;
+
   [key: string]: any;
 
 }
@@ -56,9 +58,17 @@ export interface W3CAnnotationTarget {
 
   selector?: AbstractW3CSelector;
 
+  styleClass?: string;
+
 }
 
 export interface AbstractW3CSelector { }
+
+
+export type W3CAnnotationStylesheet = string | {
+  type: "CssStylesheet",
+  value: string
+}
 
 // https://stackoverflow.com/questions/6122571/simple-non-secure-hash-function-for-javascript
 const hashCode = (obj: Object): string => {
