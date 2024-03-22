@@ -46,10 +46,13 @@
     "vite-plugin-dts": "^3.7.2"
   },
   "peerDependencies": {
+    "@annotorious/core": "*",
     "@annotorious/annotorious": "*",
     "openseadragon": "^3.0.0 || ^4.0.0"
   },
   "dependencies": {
+    "@annotorious/core": "*",
+    "@annotorious/annotorious": "*",
     "@neodrag/svelte": "^2.0.3",
     "pixi.js": "^6.5.10",
     "uuid": "^9.0.1"
