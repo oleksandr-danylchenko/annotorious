@@ -13,6 +13,7 @@ import '@annotorious/openseadragon/annotorious-openseadragon.css';
 export type {
   Annotation,
   AnnotationBody,
+  AnnotationState,
   AnnotationTarget,
   Annotator,
   AnnotatorState,
@@ -20,6 +21,7 @@ export type {
   AppearanceProvider,
   Color,
   DrawingStyle,
+  DrawingStyleExpression,
   Filter,
   FormatAdapter,
   HoverState,
@@ -60,7 +62,6 @@ export type {
   FragmentSelector,
   ImageAnnotator as AnnotoriousImageAnnotator,
   ImageAnnotation,
-  ImageAnnotator,
   ImageAnnotatorState,
   Polygon,
   PolygonGeometry,

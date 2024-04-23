@@ -4,11 +4,13 @@ export * from './Annotorious';
 export type {
   Annotation,
   AnnotationBody,
+  AnnotationState,
   AnnotationTarget,
   Annotator,
   AnnotatorState,
   Color,
   DrawingStyle,
+  DrawingStyleExpression,
   FormatAdapter,
   HoverState,
   Selection,
